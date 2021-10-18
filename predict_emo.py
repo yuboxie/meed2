@@ -47,7 +47,7 @@ def main(model_name, dataset, f_out):
     f_out.write('{} predicting on {}...\n'.format(model_name, dataset))
 
     optimal_epoch = model_optimal_epoch[model_name]
-    checkpoint_path = 'checkpoints_ebp/{}'.format(model_name)
+    checkpoint_path = 'checkpoints/{}'.format(model_name)
     save_path = 'prediction/{}/{}.csv'.format(dataset, model_name)
 
     if dataset == 'os' or dataset == 'edos':

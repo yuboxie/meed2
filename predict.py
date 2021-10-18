@@ -70,7 +70,7 @@ def evaluate(meed, inp, inp_seg, inp_emot, pred_tar_emot, tar_seg):
 
 def main(model_name, dataset):
     optimal_epoch = model_optimal_epoch[model_name]
-    checkpoint_path = 'checkpoints_ebp/{}'.format(model_name)
+    checkpoint_path = 'checkpoints/{}'.format(model_name)
     pred_emot_path = 'prediction/{}/emo_pred_{}.csv'.format(dataset, model_name[5:])
     index_path = 'prediction/{}_2000.npy'.format(dataset)
     save_path = 'prediction/{}/{}.csv'.format(dataset, model_name)
