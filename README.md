@@ -32,3 +32,6 @@ The project was developed using the following packages:
 
 ## Trained Models
 TensorFlow checkpoints can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing).
+
+## Datasets
+The OS and EDOS datasets can be found [here](https://drive.google.com/drive/folders/16-dkORqc6p7q5j14zNN_t7_V-NJjn6ga?usp=sharing).
