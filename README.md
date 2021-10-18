@@ -5,7 +5,7 @@ Code for paper
 > CoNLL 2021. [PDF Link](https://arxiv.org/pdf/2105.06829.pdf).
 
 ## Environment
-The project was developed under the following environment:
+The project was developed using the following packages:
 
     tqdm==4.49.0
     numpy==1.19.3
@@ -15,7 +15,6 @@ The project was developed under the following environment:
     pytorch_transformers==1.2.0
 
 ## Files
-The list of code files and their descriptions:
 - `datasets.py`: read the data and tokenize the text;
 - `model_basics.py`: implementation of Transformer basic components;
 - `model_emo_pred.py`: implementation of the response emotion/intent predictor;
@@ -30,3 +29,6 @@ The list of code files and their descriptions:
 - `predict_emo.py`: predict the response emotion/intent;
 - `beam_search.py`: implementation of the beam search algorithm;
 - `predict.py`: generate the responses.
+
+## Trained Models
+TensorFlow checkpoints can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing).
