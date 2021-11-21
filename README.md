@@ -31,7 +31,7 @@ The project was developed using the following packages:
 - `predict.py`: generate the responses.
 
 ## Preprocessed Data
-The preprocessed data necessary for training (tokenization and emotion/intent distribution for each utterance) can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing) (inside the folder `data`).
+The preprocessed data needed for training (tokenization and emotion/intent distribution for each utterance) can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing) (inside the folder `data`).
 
 ## Trained Models
 TensorFlow checkpoints can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing) (inside the folder `checkpoints`).
