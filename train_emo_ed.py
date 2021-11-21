@@ -38,7 +38,7 @@ restore_epoch = 3
 restore_path = 'checkpoints/emo_pred_os'
 checkpoint_path = 'checkpoints/emo_pred_os_ed'
 log_path = 'log/emo_pred_os_ed.log'
-data_path = '../ed/data_ebp'
+data_path = 'data/ed'
 
 
 def main():

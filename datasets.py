@@ -226,7 +226,7 @@ def create_ed_datasets(tokenizer, path, buffer_size, batch_size, max_length, ind
                 tf.data.Dataset.from_tensor_slices(target_emots)), prompts, inputs.shape[0]
 
     train_dataset, _, _ = create_dataset(join(path, 'train'))
-    val_dataset, _, _ = create_dataset(join(path, 'validation'))
+    val_dataset, _, _ = create_dataset(join(path, 'valid'))
     test_dataset, prompts, N = create_dataset(join(path, 'test'), cascade = False)
 
     train_dataset = tf.data.Dataset.zip(train_dataset).shuffle(buffer_size).batch(batch_size)

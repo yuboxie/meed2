@@ -72,16 +72,16 @@ def main(model_name, dataset):
     optimal_epoch = model_optimal_epoch[model_name]
     checkpoint_path = 'checkpoints/{}'.format(model_name)
     pred_emot_path = 'prediction/{}/emo_pred_{}.csv'.format(dataset, model_name[5:])
-    index_path = 'prediction/{}_2000.npy'.format(dataset)
     save_path = 'prediction/{}/{}.csv'.format(dataset, model_name)
 
+    index_path = 'data/{}/test_2000_index.npy'.format(dataset)
     index = np.load(index_path)
 
     if dataset == 'os' or dataset == 'edos':
-        data_path = '../../os/{}_emobert/test_human'.format(dataset)
+        data_path = 'data/{}/test_human'.format(dataset)
         test_dataset, N = create_os_test_dataset(tokenizer, data_path, batch_size, max_length, index)
     elif dataset == 'ed':
-        data_path = '../../empathetic_dialogues/data_ebp'
+        data_path = 'data/ed'
         _, _, test_dataset, _, N = create_ed_datasets(tokenizer, data_path, buffer_size, batch_size, max_length, index)
 
 

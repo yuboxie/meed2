@@ -36,7 +36,7 @@ adam_epsilon = 1e-6
 
 checkpoint_path = 'checkpoints/emo_pred_os'
 log_path = 'log/emo_pred_os.log'
-data_path = '../os/os_emobert'
+data_path = 'data/os'
 
 
 def main():

@@ -38,7 +38,7 @@ restore_epoch = 50
 restore_path = 'checkpoints/meed_os'
 checkpoint_path = 'checkpoints/meed_os_edos'
 log_path = 'log/meed_os_edos.log'
-data_path = '../os/edos_emobert'
+data_path = 'data/edos'
 
 
 def main():

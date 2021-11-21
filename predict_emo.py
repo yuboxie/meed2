@@ -51,10 +51,10 @@ def main(model_name, dataset, f_out):
     save_path = 'prediction/{}/{}.csv'.format(dataset, model_name)
 
     if dataset == 'os' or dataset == 'edos':
-        data_path = '../../os/{}_emobert/test_human'.format(dataset)
+        data_path = 'data/{}/test_human'.format(dataset)
         test_dataset, N = create_os_test_dataset(tokenizer, data_path, batch_size, max_length)
     elif dataset == 'ed':
-        data_path = '../../empathetic_dialogues/data_ebp'
+        data_path = 'data/ed'
         _, _, test_dataset, _, N = create_ed_datasets(tokenizer, data_path, buffer_size, batch_size, max_length)
 
     # Define the model.

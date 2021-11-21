@@ -30,8 +30,11 @@ The project was developed using the following packages:
 - `beam_search.py`: implementation of the beam search algorithm;
 - `predict.py`: generate the responses.
 
-## Trained Models
-TensorFlow checkpoints can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing).
+## Preprocessed Data
+The preprocessed data necessary for training (tokenization and emotion/intent distribution for each utterance) can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing) (inside the folder `data`).
 
-## Datasets
-The OS and EDOS datasets can be found [here](https://drive.google.com/drive/folders/16-dkORqc6p7q5j14zNN_t7_V-NJjn6ga?usp=sharing).
+## Trained Models
+TensorFlow checkpoints can be found [here](https://drive.google.com/drive/folders/1n1MSVwn9ud1lfGgif2yIedPecFrmsmCV?usp=sharing) (inside the folder `checkpoints`).
+
+## Raw Datasets
+The raw OS and EDOS datasets can be found [here](https://drive.google.com/drive/folders/16-dkORqc6p7q5j14zNN_t7_V-NJjn6ga?usp=sharing).
