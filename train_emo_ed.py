@@ -85,13 +85,12 @@ def main():
         def train_step(dist_inputs):
             def step_fn(inputs):
                 inp, inp_seg, inp_emot, _, _, _, tar_emot = inputs
-                tar_emot_one_hot = tf.one_hot(tar_emot, num_emotions)
 
                 enc_padding_mask = create_padding_mask(inp)
 
                 with tf.GradientTape() as tape:
                     pred_emot = emotion_predictor(inp, inp_seg, inp_emot, True, enc_padding_mask)
-                    losses_per_examples = loss_function(tar_emot_one_hot, pred_emot)
+                    losses_per_examples = loss_function(tar_emot, pred_emot)
                     loss = tf.reduce_sum(losses_per_examples) * (1.0 / batch_size)
 
                 gradients = tape.gradient(loss, emotion_predictor.trainable_variables)    
