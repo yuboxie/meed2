@@ -1,6 +1,7 @@
 # Custom
 **/.DS_Store
 checkpoints
+roberta
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
